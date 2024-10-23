@@ -30,18 +30,14 @@ public class Main {
         System.out.print("Введите год выпуска телефона : ");
         int clientDeviceYear = phoneYear.nextInt();
 
-        if (client == 0 & clientDeviceYear < 2015) {
+        if (client == 0 & clientDeviceYear < 2015)
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-        } else {
-            if (client == 0 & clientDeviceYear >= 2015) {
-                System.out.println("Установите версию приложения для iOS по ссылке");
-            }
-            if (client == 1 & clientDeviceYear < 2015) {
+        else {
+            System.out.println("Установите версию приложения для iOS по ссылке");
+            if (client == 1 & clientDeviceYear < 2015)
                 System.out.println("Установите облегченную версию приложения для Android по ссылке");
-            } else {
-                if (client == 1 & clientDeviceYear >= 2015) {
-                    System.out.println("Установите версию приложения для Android по ссылке");
-                }
+            else {
+                System.out.println("Установите версию приложения для Android по ссылке");
             }
         }
 
@@ -63,7 +59,7 @@ public class Main {
                     System.out.println("Доставка не осуществляется ");
                     return;
                 }
-                System.out.println("Ваша карта будет доставлена через " + time + "дней");
+                System.out.println("Ваша карта будет доставлена через " + time + " дней");
             }
         }
 
